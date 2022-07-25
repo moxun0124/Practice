@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Square</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="gameUI">
+        <div class="UIbackground">
+            <div id="beginBoard">
+                <h2>【遊戲說明】</h2>
+                <div class="info">
+                    <img src="./img/jumping.png" alt="跳躍">
+                    <h3>跳躍</h3>
+                    <p>【W】</p>
+                </div>
+                <div class="info">
+                    <img src="./img/standing.png" alt="蹲下">
+                    <h3>蹲下</h3>
+                    <p>【S】</p>
+                </div>
+                <div class="info">
+                    <img src="./img/obstacle.png" alt="障礙">
+                    <h3>障礙</h3>
+                    <p>Enemy</p>
+                </div>
+                <div class="info">
+                    <img src="./img/item.png" alt="獎勵">
+                    <h3>獎勵</h3>
+                    <p>Bonus</p>
+                </div>
+                <p>※行動裝置請點擊螢幕進行跳躍</p>
+            </div>
+            <div id="scoreBoard" style="display: none;">
+                <h2>【得分】</h2>
+                <h3 id="showScore"></h3>
+            </div>
+            <div>
+                <button id="startGameBtn">開始遊戲</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="arena" height="400"></canvas>
+    <script src="classes.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
